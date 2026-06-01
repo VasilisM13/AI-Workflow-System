@@ -46,6 +46,20 @@ documentation, not runtime files.
 
 ### 1. Copy the framework files into your project
 
+**Option A — installer script (Windows, recommended)**
+
+From the framework repo, run:
+
+```powershell
+.\scripts\install-ai-workflow.ps1 -TargetPath C:\path\to\your-project
+```
+
+It copies only the runtime files, **never overwrites existing files** (re-run
+with `-Force` to overwrite), and prints exactly what it copied and skipped. Then
+continue to step 2.
+
+**Option B — manual copy**
+
 **PowerShell**
 
 ```powershell
